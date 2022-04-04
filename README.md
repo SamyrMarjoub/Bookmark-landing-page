@@ -1,3 +1,3 @@
 # Bookmark-landing-page
 <hr>
-<img src='./images/desktop-preview'>
+<img src='./images/desktop-preview.jpg'>
