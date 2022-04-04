@@ -19,17 +19,26 @@ const iconimg = document.querySelector('.icon-img')
 const iconimg2 = document.querySelector('.icon-img2')
 const iconimg3 = document.querySelector('.icon-img3')
 const iconimg4 = document.querySelector('.icon-img4')
+const mobile = document.querySelector('.menu-mobile')
+const menumobile = document.querySelector('.menu-container')
+const menu = document.querySelector('.menu')
+const d2 = document.querySelector('.d2')
 
-let widthh = window.innerWidth
-window.addEventListener('resize', function () {
-    widthh = this.window.innerWidth
+mobile.addEventListener('click', function () {
+    menumobile.style.display = 'block'
+    menu.style.display = 'block'
 })
+d2.addEventListener('click', function () {
+    menumobile.style.display = 'none'
+    menu.style.display = 'none'
+
+})
+
 let i = 1
 let i2 = 1
 let i3 = 1
 let i4 = 1
 btn1.addEventListener('click', function () {
-
     img.style.backgroundImage = "url('./images/illustration-features-tab-1.svg')"
     titulo.innerHTML = 'Bookmarck in one click'
 })
@@ -89,15 +98,6 @@ li4.addEventListener('click', function () {
         iconimg4.style.transform = 'rotate(0deg)'
     }
 })
-
-
-
-
-
-
-
-
-
 a1.addEventListener('click', function () {
     event.preventDefault()
 })
